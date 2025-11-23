@@ -33,7 +33,7 @@ export default function Home() {
       <div id="home-page">
         <h1>Latest Games</h1>
         <div id="latest-wrap">
-          {/* Display div: with information about every game (if any) */}
+          {latestGames.length ===0 && <h3 className="no-articles">No Added Games Yet</h3>}
           <div className="home-container">
             {latestGames.map(game => <GameCard key={game._id} {...game}/>)}
             
