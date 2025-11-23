@@ -28,7 +28,7 @@ export default function Catalog() {
       {/* Display div: with information about every game (if any) */}
       <div className="catalog-container">
 
-        {games.map(game => <GameCard key={game._id}/>)}
+        {games.map(game => <GameCard key={game._id} {...game}/>)}
 
       </div>
       {/* Display paragraph: If there is no games  */}

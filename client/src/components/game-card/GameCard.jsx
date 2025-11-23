@@ -1,10 +1,15 @@
-export default function GameCard() {
+export default function GameCard({
+    _id,
+    genre,
+    imageUrl,
+    title
+}) {
     return (
         <div className="game">
-            <img src="./images/witcher.png" alt="The Witcher 3" />
+            <img src={imageUrl} alt={title} />
             <div className="details-overlay">
-                <p className="name">The Witcher 3</p>
-                <p className="genre">Open World</p>
+                <p className="name">{title}</p>
+                <p className="genre">{genre}</p>
                 <a href="#" className="details-button">
                     Details
                 </a>
