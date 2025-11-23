@@ -1,2 +1,3 @@
-# -I-love-game
-Softuni React Project
+Туду лист за проекта за изпита
+
+- [x] Инсталиране на Vite с - npm create vite . - точната отзад е важна да не се забравя
