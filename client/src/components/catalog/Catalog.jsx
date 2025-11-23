@@ -1,5 +1,18 @@
+import { useEffect } from "react"
+
+const BaseURL = 'http://localhost:3030/jsonstore/games'
+
 export default function Catalog(){
-    return(
+  useEffect(() =>{
+    (async() =>{
+      const response = await fetch(BaseURL);
+      const result = await response.json();
+      
+      console.log(Object.values(result));
+    })();
+  },[]);
+    
+  return(
         <section id="catalog-page">
   <h1>Catalog</h1>
   {/* Display div: with information about every game (if any) */}
